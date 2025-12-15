@@ -40,6 +40,13 @@ def balance_parenthesis(a_string):
         elif item == ")":
             closes += 1
         
+    
+    if opens == closes:
+        return 0
+    elif opens < closes:
+        return -1
+    else:
+        return open_locations[len(open_locations)-(opens-closes)]
 
 
 def main():
