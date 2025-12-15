@@ -37,6 +37,10 @@ class Fan:
             self.change_speed(0)
             return None
 
+    def change_speed(self,speed):
+        self.__speed = speed
+
+
 """
 Complete the turn_on function below to update the state of the fan.
 Parameters:     
