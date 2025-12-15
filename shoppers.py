@@ -36,6 +36,10 @@ class Item:
     
     def is_equal(self,other):
         return self.__code == other.__code
+    
+    def __str__(self):
+        output = '(' + str(self.__code) + ", " + str(self.__name) + ", " + str(self.__price) + ')'
+        return output
 
 
 # manual test from main() method
