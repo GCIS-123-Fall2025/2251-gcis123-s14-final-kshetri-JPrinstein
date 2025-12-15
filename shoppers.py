@@ -44,6 +44,20 @@ class Item:
 
 # manual test from main() method
 def main():     
-  pass
+  item1 = Item("ABCD-1234","Silky Camisole",24)
+  item2 = Item("ABCD-1234","Test Item",13)
+  item3 = Item("Woo-1234","Fresh Biscuit",12)
+
+  print(item1)
+  print(item2)
+  print(item3)
+
+  items = [str(item1),str(item3),str(item2)]
+  print(items)
+
+  items.sort()
+  print(items)
+
+  print(item1.is_equal(item2))
 
 if __name__ == "__main__":    main()
