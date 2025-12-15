@@ -33,6 +33,9 @@ class Item:
     
     def get_price(self):
         return self.__price
+    
+    def is_equal(self,other):
+        return self.__code == other.__code
 
 
 # manual test from main() method
