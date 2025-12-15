@@ -30,6 +30,17 @@ def balance_parenthesis(a_string):
         stack1.push(i)
 
 
+    index = 0
+    while stack1.is_empty() == False:
+        item = stack1.pop()
+        if item == "(":
+            opens += 1
+            open_locations.append(index)
+            index += 1
+        elif item == ")":
+            closes += 1
+        
+
 
 def main():
     print(balance_parenthesis("--(---(------)--"))
