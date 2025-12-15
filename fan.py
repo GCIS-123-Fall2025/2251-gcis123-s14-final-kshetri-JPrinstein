@@ -61,7 +61,8 @@ Returns:
 
 """
 def turn_on(fan,speed):
-    pass
+    action = fan.change_on(speed)
+    return action
     
 """
 Complete the turn_off function below to update the state of the fan.  When a fan is off,
@@ -70,7 +71,7 @@ Parameters:    fan - a fan object
 Returns:    None
 """
 def turn_off(fan):
-    pass
+    return fan.change_on()
     
 
 """
