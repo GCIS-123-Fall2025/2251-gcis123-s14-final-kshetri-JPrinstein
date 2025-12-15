@@ -18,11 +18,16 @@ Write down the manual test by creating at least two items.
 """
 
 class Item:
-    pass # please replace with your solution
+    __slots__ = ["__code","__name","__price"]
+
+    def __init__(self,code,name,price):
+        self.__code = code
+        self.__name = name
+        self.__price = price
 
 
 # manual test from main() method
-def main():     pass
- 
+def main():     
+  pass
 
 if __name__ == "__main__":    main()
