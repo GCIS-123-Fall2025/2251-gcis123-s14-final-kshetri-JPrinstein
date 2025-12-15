@@ -24,6 +24,19 @@ class Fan:
         self.__is_on = False
         self.__speed = 0
 
+    def change_on(self,speed=None):
+        if speed != None:
+            self.__is_on = True
+            if 1 <= speed <= 10:
+                self.change_speed(speed)
+                return True
+            else:
+                return False
+        else:
+            self.__is_on = False
+            self.change_speed(0)
+            return None
+
 """
 Complete the turn_on function below to update the state of the fan.
 Parameters:     
